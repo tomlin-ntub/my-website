@@ -1,41 +1,141 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Android 計算機 App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#1a1a2e">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>layoutit-project</title>
+    <meta name="description" content="Generated with Layoutit" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
 </head>
+
 <body>
-    <div class="calculator">
-        <div class="display" id="display">0</div>
-        <div class="buttons">
-            <button class="btn clear" onclick="clearDisplay()">C</button>
-            <button class="btn operator" onclick="appendOperator('/')">&divide;</button>
-            <button class="btn operator" onclick="appendOperator('*')">&times;</button>
-            <button class="btn operator" onclick="deleteLast()">&#9003;</button>
-
-            <button class="btn" onclick="appendNumber('7')">7</button>
-            <button class="btn" onclick="appendNumber('8')">8</button>
-            <button class="btn" onclick="appendNumber('9')">9</button>
-            <button class="btn operator" onclick="appendOperator('-')">&minus;</button>
-
-            <button class="btn" onclick="appendNumber('4')">4</button>
-            <button class="btn" onclick="appendNumber('5')">5</button>
-            <button class="btn" onclick="appendNumber('6')">6</button>
-            <button class="btn operator" onclick="appendOperator('+')">+</button>
-
-            <button class="btn" onclick="appendNumber('1')">1</button>
-            <button class="btn" onclick="appendNumber('2')">2</button>
-            <button class="btn" onclick="appendNumber('3')">3</button>
-            <button class="btn equal" onclick="calculate()" rowspan="2">=</button>
-
-            <button class="btn zero" onclick="appendNumber('0')">0</button>
-            <button class="btn" onclick="appendNumber('.')">.</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Brand</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-collapse-086c916d-e16f-4754-ae7e-15288d0bb3a5"
+                            aria-controls="navbar-collapse-086c916d-e16f-4754-ae7e-15288d0bb3a5" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-collapse-086c916d-e16f-4754-ae7e-15288d0bb3a5">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" aria-current="page">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        id="navbar-dropdown-086c916d-e16f-4754-ae7e-15288d0bb3a5" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                                    <ul class="dropdown-menu"
+                                        aria-labelledby="navbar-dropdown-086c916d-e16f-4754-ae7e-15288d0bb3a5">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </form>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" aria-current="page">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        id="navbar-dropdown-086c916d-e16f-4754-ae7e-15288d0bb3a5" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                                    <ul class="dropdown-menu"
+                                        aria-labelledby="navbar-dropdown-086c916d-e16f-4754-ae7e-15288d0bb3a5">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/1-scroll.jpg" alt="Card image" />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+                                    id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
+                                    vehicula ut id elit.</p>
+                                <a class="btn btn-primary" href="#" role="button">Action</a>
+                                <a class="btn text-primary" href="#" role="button">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/2-scroll.jpg" alt="Card image" />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+                                    id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
+                                    vehicula ut id elit.</p>
+                                <a class="btn btn-primary" href="#" role="button">Action</a>
+                                <a class="btn text-primary" href="#" role="button">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/3-scroll.jpg" alt="Card image" />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+                                    id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
+                                    vehicula ut id elit.</p>
+                                <a class="btn btn-primary" href="#" role="button">Action</a>
+                                <a class="btn text-primary" href="#" role="button">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
